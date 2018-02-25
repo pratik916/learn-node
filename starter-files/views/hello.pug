@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  ul.dogs
+    li.dog.dog01
+    li.dog.dog02
+    li.dog.dog03
+    li.dog.dog04
+    li.dog.dog05
+    li.dog.dog06
+    li.dog.dog07
+    li.dog.dog08
+    li.dog.dog09
+    li.dog.dog10
+  div.wrapper
+    - const updog = dog.toUpperCase();
+    p.hello Hello!, My dog's name is #{updog}
+    span#yo Yo!!
+    img.dog(src="dog.jpg" alt=`dog ${dog}`)
+
+  h2
+    | Hello
+    em How are you?
